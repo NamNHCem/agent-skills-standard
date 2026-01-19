@@ -18,6 +18,9 @@ export enum Framework {
   React = 'react',
   ReactNative = 'react-native',
   Angular = 'angular',
+  Kotlin = 'kotlin',
+  KMP = 'kmp',
+  ComposeMultiplatform = 'compose-multiplatform',
 }
 
 export interface AgentDefinition {
@@ -157,6 +160,28 @@ export const getFrameworkDefinition = (id: Framework): FrameworkDefinition => {
         name: 'Angular',
         languages: ['typescript'],
         detectionFiles: ['angular.json'],
+      };
+    case Framework.Kotlin:
+      return {
+        id,
+        name: 'Kotlin (Android)',
+        languages: ['kotlin', 'jetpack-compose', 'android-xml'],
+        detectionFiles: ['build.gradle.kts', 'app/build.gradle.kts'],
+        detectionDependencies: ['com.android.application'],
+      };
+    case Framework.KMP:
+      return {
+        id,
+        name: 'Kotlin Multiplatform',
+        languages: ['kotlin', 'kmp'],
+        detectionFiles: ['shared/build.gradle.kts', 'commonMain'],
+      };
+    case Framework.ComposeMultiplatform:
+      return {
+        id,
+        name: 'Compose Multiplatform',
+        languages: ['kotlin', 'kmp', 'compose-multiplatform'],
+        detectionFiles: ['composeApp/build.gradle.kts'],
       };
   }
 };
