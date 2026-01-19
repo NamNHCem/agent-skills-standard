@@ -21,6 +21,7 @@ export enum Framework {
   Kotlin = 'kotlin',
   KMP = 'kmp',
   ComposeMultiplatform = 'compose-multiplatform',
+  Swift = 'swift',
 }
 
 export interface AgentDefinition {
@@ -182,6 +183,13 @@ export const getFrameworkDefinition = (id: Framework): FrameworkDefinition => {
         name: 'Compose Multiplatform',
         languages: ['kotlin', 'kmp', 'compose-multiplatform'],
         detectionFiles: ['composeApp/build.gradle.kts'],
+      };
+    case Framework.Swift:
+      return {
+        id,
+        name: 'iOS (Swift/SwiftUI)',
+        languages: ['swift', 'swift-ui'],
+        detectionFiles: ['Package.swift', 'Podfile', 'Project.swift'],
       };
   }
 };

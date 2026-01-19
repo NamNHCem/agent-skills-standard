@@ -65,6 +65,16 @@
       "version": "1.0.0",
       "last_updated": "2026-01-19",
       "tag_prefix": "compose-multiplatform-v"
+    },
+    "swift": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-19",
+      "tag_prefix": "swift-v"
+    },
+    "swift-ui": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-19",
+      "tag_prefix": "swift-ui-v"
     }
   }
 }
