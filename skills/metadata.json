@@ -1,0 +1,70 @@
+{
+  "global": {
+    "author": "Nam Nguyen",
+    "repository": "https://github.com/NamNHCem/agent-skills-standard"
+  },
+  "categories": {
+    "flutter": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-17",
+      "tag_prefix": "flutter-v"
+    },
+    "dart": {
+      "version": "1.0.1",
+      "last_updated": "2026-01-17",
+      "tag_prefix": "dart-v"
+    },
+    "typescript": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-17",
+      "tag_prefix": "typescript-v"
+    },
+    "javascript": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-17",
+      "tag_prefix": "javascript-v"
+    },
+    "react": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-17",
+      "tag_prefix": "react-v"
+    },
+    "nestjs": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-17",
+      "tag_prefix": "nestjs-v"
+    },
+    "golang": {},
+    "nextjs": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-18",
+      "tag_prefix": "nextjs-v"
+    },
+    "angular": {},
+    "kotlin": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-19",
+      "tag_prefix": "kotlin-v"
+    },
+    "jetpack-compose": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-19",
+      "tag_prefix": "jetpack-compose-v"
+    },
+    "android-xml": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-19",
+      "tag_prefix": "android-xml-v"
+    },
+    "kmp": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-19",
+      "tag_prefix": "kmp-v"
+    },
+    "compose-multiplatform": {
+      "version": "1.0.0",
+      "last_updated": "2026-01-19",
+      "tag_prefix": "compose-multiplatform-v"
+    }
+  }
+}
